@@ -1,2 +1,2 @@
-# jayanthi-tribute
-Tribute page for the Indian actress Jayanthi. Project for practicing vanilla HTML and CSS.
+# teresa-teng-tribute
+Project to practice the process of designing and coding of a vanilla HTML and CSS webpage.
