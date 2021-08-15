@@ -14,16 +14,19 @@ body {
 }
 
 main {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.section-block {
+    padding-bottom: 150px;
+    padding-top: 150px;
 }
 
 .landing-grid {
     display: grid;
     grid-template-columns: 50px 50px 1fr 50px 50px;
     grid-template-rows: 30px auto 6rem auto;
-    margin-top: 150px;
-    margin-bottom: 150px;
 }
 
 #landing-img-div {
@@ -44,7 +47,7 @@ main {
 }
 
 #landing-text {
-    grid-column: 3 / 6;
+    grid-column: 3 / 4;
     grid-row: 3 / 6;
     display: flex;
     flex-direction: column;
@@ -57,23 +60,35 @@ main {
     font-family: 'EB Garamond', serif;
 }
 
+#landing {
+    padding-bottom: 300px;
+}
+
 #title {
     grid-column: 3 / 5;
 }
 
 #title-h1 {
     line-height: 12rem;
-    margin-top: -1rem;
+    margin-top: -3rem;
     margin-bottom: 4rem;
 }
 
+#landing-line-outer {
+    position: absolute;
+    left: 50%;
+}
 #landing-line {
+    position: relative;
+    left: -50%;
+    top: 150px;
     width: 2px;
     height: 200px;
     background-color: black;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 150px;
+}
+
+#transition-content {
+    text-align: center;
 }
 
 img {
@@ -81,7 +96,15 @@ img {
     width: 100%;
 }
 
-h1, h2, h3 {
+figure {
+    margin: 80px 0px 80px 0px;
+}
+
+figcaption {
+    font-size: 0.75rem;
+}
+
+h1, h2, h3, #transition-content{
     font-family: 'regatto', serif;
     font-weight: normal;
 }
@@ -90,10 +113,14 @@ h1 {
     font-size: 12rem;
 }
 
-h2 {
-    font-size: 6rem;
+h2, #transition-content{
+    font-size: 5rem;
 }
 
 h3 {
     font-size: 4rem;
+}
+
+p {
+    font-size: 1rem;
 }
